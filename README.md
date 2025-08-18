@@ -1,6 +1,6 @@
-# Andrew Macharia - Portfolio
+# Your Name - Portfolio
 
-A modern, responsive personal portfolio website built with Next.js, TypeScript, and Tailwind CSS.
+A personal portfolio website showcasing my projects and skills, built with Next.js, TypeScript, and Tailwind CSS.
 
 ## 🚀 Features
 
@@ -25,7 +25,7 @@ A modern, responsive personal portfolio website built with Next.js, TypeScript, 
 
 1. Clone the repository:
 \`\`\`bash
-git clone https://github.com/andrewmacharia/portfolio.git
+git clone https://github.com/yourusername/portfolio.git
 cd portfolio
 \`\`\`
 
@@ -91,17 +91,31 @@ Update your personal information in the respective component files:
 
 ## 🚀 Deployment
 
-### Vercel (Recommended)
-1. Push your code to GitHub
-2. Connect your repository to [Vercel](https://vercel.com)
-3. Deploy with zero configuration
+### GitHub Pages
+1. In your repository settings, enable GitHub Pages
+2. Set the source branch to `main` and folder to `/docs`
+3. Add the following to your `next.config.js`:
+\`\`\`js
+module.exports = {
+  output: 'export',
+  basePath: '/portfolio',
+  images: {
+    unoptimized: true
+  }
+}
+\`\`\`
+4. Update your build script in `package.json`:
+\`\`\`json
+"build": "next build && next export -o docs"
+\`\`\`
+5. Push your changes to GitHub
 
 ### Other Platforms
-The project can be deployed to any platform that supports Next.js:
+The project can be deployed to any static hosting platform:
 - Netlify
-- AWS Amplify
-- Railway
-- DigitalOcean App Platform
+- Cloudflare Pages
+- Firebase Hosting
+- Surge
 
 ## 📄 License
 
@@ -109,14 +123,14 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/andrewmacharia/portfolio/issues).
+Contributions are welcome! Feel free to check the [issues page](https://github.com/yourusername/portfolio/issues).
 
 ## 📞 Contact
 
-Andrew Macharia - [andrewmacharia@example.com](mailto:andrewmacharia@example.com)
+Your Name - [your.email@example.com](mailto:your.email@example.com)
 
-Project Link: [https://github.com/andrewmacharia/portfolio](https://github.com/andrewmacharia/portfolio)
+Project Link: [https://github.com/yourusername/portfolio](https://github.com/yourusername/portfolio)
 
 ---
 
-⭐ Star this repo if you found it helpful!
+⭐ If you found this template helpful, please give it a star!
