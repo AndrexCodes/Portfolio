@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/root',
+  basePath: '/Portfolio',
+  assetPrefix: '/Portfolio',
   experimental: {
     optimizePackageImports: ['lucide-react']
   },
